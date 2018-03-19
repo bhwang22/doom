@@ -5,6 +5,7 @@
 (load! +header)
 (load! +mail)
 (load! +ui)
+(load! +vc)
 
 (provide 'config)
 
