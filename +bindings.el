@@ -22,6 +22,10 @@
 
  (:prefix "C-c v" "m" 'magit-status))
 
+(which-key-add-key-based-replacements "C-c e" "editor")
+(which-key-add-key-based-replacements "C-c l" "eshell")
+(which-key-add-key-based-replacements "C-c v" "versionning")
+
 (provide '+bindings)
 
 ;;; +bindings.el ends here
