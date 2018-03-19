@@ -16,7 +16,7 @@ $ git branch develop origin/develop
 $ git checkout develop
 $ cd
 $ git clone ... .doom.d
-$ cd ~/.doomd.d
+$ cd ~/.doom.d
 $ ln -s init.doom.el ~/.emacs.d/init.el
 $ cd ~/.emacs.d
 $ make
