@@ -18,8 +18,9 @@
  "C-c e g" 'update-file-header
  "C-c e l" '+private/duplicate-line
 
- (:prefix "C-c v"
-   "m" 'magit-status))
+ "C-c l c" '+private/clear-eshell
+
+ (:prefix "C-c v" "m" 'magit-status))
 
 (provide '+bindings)
 

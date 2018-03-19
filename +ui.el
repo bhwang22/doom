@@ -10,8 +10,6 @@
 
 (setq doom-theme 'doom-nord)
 
-(setq show-trailing-whitespace t)
-
 (after! doom-themes
   (doom-themes-visual-bell-config)
   (doom-themes-neotree-config)
@@ -22,8 +20,7 @@
 
 (after! neotree
   (setq neo-mode-line-type 'none)
-  (setq neo-window-fixed-size nil)
-  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+  (setq neo-theme 'icons)
   (setq neo-window-width 35)
   (setq neo-autorefresh t)
   (setq neo-smart-open t)
