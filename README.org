@@ -8,14 +8,9 @@
 ** Installation
 
 #+BEGIN_SRC shell
-$ git clone https://github.com/hlissner/doom-emacs.git .emacs.d
-$ cd ~/.emacs.d
-$ git branch develop origin/develop
-$ git checkout develop
-$ cd
-$ git clone https://github.com/jwintz/doom.git .doom.d
-$ cd ~/.doom.d
-$ ln -s init.doom.el ~/.emacs.d/init.el
+$ git clone -b develop --single-branch https://github.com/hlissner/doom-emacs.git .emacs.d
+$ git clone -b develop --single-branch https://github.com/jwintz/doom.git .doom.d
+$ ln -s ~/.doom.d/init.doom.el ~/.emacs.d/init.el
 $ cd ~/.emacs.d
 $ make
 $ make doctor
