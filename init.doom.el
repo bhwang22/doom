@@ -88,7 +88,7 @@
        :lang
        assembly          ; assembly for fun or debugging
        cc                ; C/C++/Obj-C madness
-       crystal           ; ruby at the speed of c
+      ;crystal           ; ruby at the speed of c
        clojure           ; java with a lisp
        csharp            ; unity, .NET, and mono shenanigans
        data              ; config/data formats
@@ -96,8 +96,8 @@
        elm               ; care for a cup of TEA?
        emacs-lisp        ; drown in parentheses
        ess               ; emacs speaks statistics
-       go                ; the hipster dialect
-       (haskell +intero) ; a language that's lazier than I am
+      ;go                ; the hipster dialect
+      ;(haskell +intero) ; a language that's lazier than I am
        hy                ; readability of scheme w/ speed of python
        (java +meghanada) ; the poster child for carpal tunnel syndrome
        javascript        ; all(hope(abandon(ye(who(enter(here))))))
@@ -121,7 +121,7 @@
        python            ; beautiful is better than ugly
        rest              ; Emacs as a REST client
        ruby              ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
-       rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
+      ;rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        scala             ; java, but good
        sh                ; she sells (ba|z)sh shells on the C xor
        swift             ; who asked for emoji variables?

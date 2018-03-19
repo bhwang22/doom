@@ -1,6 +1,4 @@
-#+TITLE: README
-
-* Doom emacs private module
+* Doom emacs private modules
 
 ** Why Doom Emacs ?
 
@@ -15,10 +13,11 @@ $ cd ~/.emacs.d
 $ git branch develop origin/develop
 $ git checkout develop
 $ cd
-$ git clone ... .doom.d
+$ git clone https://github.com/jwintz/doom.git .doom.d
 $ cd ~/.doom.d
 $ ln -s init.doom.el ~/.emacs.d/init.el
 $ cd ~/.emacs.d
 $ make
 $ make doctor
 #+END_SRC
+

@@ -20,6 +20,16 @@
 (after! solaire-mode
   (solaire-mode-swap-bg))
 
+(after! neotree
+  (setq neo-mode-line-type 'none)
+  (setq neo-window-fixed-size nil)
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+  (setq neo-window-width 35)
+  (setq neo-autorefresh t)
+  (setq neo-smart-open t)
+  (setq neo-dont-be-alone t)
+  (setq neo-force-change-root t))
+
 (def-package! resize-window
   :commands  (resize-window))
 
