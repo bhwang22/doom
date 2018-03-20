@@ -3,6 +3,7 @@
 (load! +bindings)
 (load! +completion)
 (load! +header)
+(load! +lang|c++)
 (load! +mail)
 (load! +ui)
 (load! +vc)

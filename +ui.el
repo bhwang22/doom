@@ -10,22 +10,7 @@
 
 (setq doom-theme 'doom-nord)
 
-(after! doom-themes
-  (doom-themes-visual-bell-config)
-  (doom-themes-neotree-config)
-  (doom-themes-org-config))
-
-(after! solaire-mode
-  (solaire-mode-swap-bg))
-
-(after! neotree
-  (setq neo-mode-line-type 'none)
-  (setq neo-theme 'icons)
-  (setq neo-window-width 35)
-  (setq neo-autorefresh t)
-  (setq neo-smart-open t)
-  (setq neo-dont-be-alone t)
-  (setq neo-force-change-root t))
+(add-hook 'doom-init-theme-hook #'solaire-mode-swap-bg t)
 
 (def-package! resize-window
   :commands  (resize-window))
