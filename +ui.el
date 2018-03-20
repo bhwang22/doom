@@ -8,9 +8,9 @@
 (setq doom-unicode-font (font-spec :family "Source Code Pro"))
 (setq doom-big-font (font-spec :family "Source Code Pro" :size 19))
 
-(setq doom-theme 'doom-nord)
-
 (add-hook 'doom-init-theme-hook #'solaire-mode-swap-bg t)
+
+(setq doom-theme 'doom-nord)
 
 (def-package! resize-window
   :commands  (resize-window))
