@@ -20,10 +20,13 @@
 
  "C-c l c" '+private/clear-eshell
 
+ "C-c t t" '=twitter
+
  (:prefix "C-c v" "m" 'magit-status))
 
 (which-key-add-key-based-replacements "C-c e" "editor")
 (which-key-add-key-based-replacements "C-c l" "eshell")
+(which-key-add-key-based-replacements "C-c l" "twitter")
 (which-key-add-key-based-replacements "C-c v" "versionning")
 (which-key-add-key-based-replacements "C-c !" "checking")
 
