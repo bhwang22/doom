@@ -2,6 +2,7 @@
 
 (load! +bindings)
 (load! +completion)
+(load! +editor)
 (load! +header)
 (load! +lang|c++)
 (load! +mail)

@@ -25,6 +25,7 @@
 (which-key-add-key-based-replacements "C-c e" "editor")
 (which-key-add-key-based-replacements "C-c l" "eshell")
 (which-key-add-key-based-replacements "C-c v" "versionning")
+(which-key-add-key-based-replacements "C-c !" "checking")
 
 (provide '+bindings)
 
