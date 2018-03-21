@@ -7,6 +7,7 @@
 (load! +lang|c)
 (load! +lang|cc)
 (load! +mail)
+(load! +popup)
 (load! +ui)
 (load! +vc)
 
