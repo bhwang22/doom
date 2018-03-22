@@ -1,3 +1,8 @@
+![releases](https://img.shields.io/github/tag/jwintz/doom.svg)
+![issues](https://img.shields.io/github/issues/jwintz/doom.svg)
+![license](https://img.shields.io/aur/license/yaourt.svg)
+![built](https://img.shields.io/badge/built%20with-Doom-Emacs-6f62ba.svg)
+
 * Doom emacs private modules
 
 ** Why Doom Emacs ?
