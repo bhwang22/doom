@@ -11,8 +11,8 @@
 
 - it is blazing fast
 - it is well thought
-- its coommunity (on discord) is most friendly
-- it's maintained by one developer, who keeps a vision and keeps everythin consistent
+- its coomunity (on discord) is most friendly
+- it's maintained by one developer, who keeps a vision and everything consistent
 
 ** Installation
 
