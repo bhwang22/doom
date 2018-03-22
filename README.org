@@ -1,6 +1,6 @@
 [[https://img.shields.io/github/tag/jwintz/doom.svg]]
 [[https://img.shields.io/github/issues/jwintz/doom.svg]]
-[[https://img.shields.io/aur/license/yaourt.svg]]
+[[https://img.shields.io/github/license/mashape/apistatus.svg]]
 
 * Doom emacs private modules
 
