@@ -7,8 +7,6 @@
 (add-hook   'find-file-hook #'whitespace-mode)
 (add-hook 'before-save-hook #'whitespace-cleanup)
 
-
-
 (provide '+editor)
 
 ;;; +editor.el ends here
