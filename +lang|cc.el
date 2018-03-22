@@ -1,5 +1,7 @@
 ;;; +lang|cc.el --- description -*- lexical-binding: t; -*-
 
+(setq c-tab-always-indent t)
+
 (setq cc-other-file-alist
       '(("\\.c\\'"   (".h"))
         ("\\.C\\'"   (".h" ".hpp" ".hxx"))
