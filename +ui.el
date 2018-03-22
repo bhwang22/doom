@@ -10,6 +10,9 @@
 
 (setq doom-theme 'doom-nord)
 
+(after! neotree
+  (setq neo-autorefresh t))
+
 (def-package! resize-window
   :commands  (resize-window))
 
