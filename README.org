@@ -1,15 +1,18 @@
 [[https://img.shields.io/github/tag/jwintz/doom.svg]]
 [[https://img.shields.io/github/issues/jwintz/doom.svg]]
 [[https://img.shields.io/github/license/mashape/apistatus.svg]]
+[[https://img.shields.io/badge/Build%20With-Doom%20Emacs-lightgrey.svg]]
 
 -----
 
-* Doom emacs private modules
+* Doom emacs private module
 
 ** Why Doom Emacs ?
 
 - it is blazing fast
 - it is well thought
+- its coommunity (on discord) is most friendly
+- it's maintained by one developer, who keeps a vision and keeps everythin consistent
 
 ** Installation
 
