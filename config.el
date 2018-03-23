@@ -3,6 +3,7 @@
 (load! +bindings)
 (load! +completion)
 (load! +editor)
+(load! +eshell)
 (load! +header)
 (load! +lang|c)
 (load! +lang|cc)

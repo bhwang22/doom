@@ -19,10 +19,14 @@
  "C-c e l" '+private/duplicate-line
 
  "C-c l c" '+private/clear-eshell
+ "C-c l l" '+eshell/open-popup
+ "C-c l o" 'multi-eshell-switch
+ "C-c l O" 'multi-eshell-go-back
 
  "C-c t t" '=twitter
 
  "C-c d d" '+doom-dashboard/open
+ "C-c d n" 'neotree-toggle
 
  (:prefix "C-c v" "m" 'magit-status))
 
