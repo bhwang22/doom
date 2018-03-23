@@ -10,6 +10,13 @@
 
 (setq doom-theme 'doom-nord)
 
+(add-variable-watcher
+ 'posframe--frame
+ (lambda (_sym frame op _where)
+   (when (and (eq op 'set) frame)
+     (with-selected-frame frame
+       (setq-local whitespace-style nil)))))
+
 (after! neotree
   (setq neo-autorefresh t))
 

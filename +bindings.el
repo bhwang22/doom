@@ -22,9 +22,12 @@
 
  "C-c t t" '=twitter
 
+ "C-c d d" '+doom-dashboard/open
+
  (:prefix "C-c v" "m" 'magit-status))
 
 (which-key-add-key-based-replacements "C-c e" "editor")
+(which-key-add-key-based-replacements "C-c d" "doom")
 (which-key-add-key-based-replacements "C-c l" "eshell")
 (which-key-add-key-based-replacements "C-c t" "twitter")
 (which-key-add-key-based-replacements "C-c v" "versionning")
