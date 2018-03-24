@@ -1050,8 +1050,8 @@ Return nil, for use on a hook."
 
 (defun update-write-count ()
   (let* ((str  (delete-and-forget-line))
-	 (rem  (read-from-string str))
-	 (num  (car rem)))
+         (rem  (read-from-string str))
+         (num  (car rem)))
     (if (numberp num)
         (insert (format "%s" (1+ num)) (substring str (cdr rem)))
       (insert str)
@@ -1265,6 +1265,10 @@ result of `update-lib-requires'."
 ;;
 ;; auto make-revision if current user is not same as last modifier
 ;;   this would give a history of who touched what.
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq header-file-name 'buffer-file-name)
 (setq make-header-hook

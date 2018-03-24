@@ -1,5 +1,9 @@
 ;;; +lang|cc.el --- description -*- lexical-binding: t; -*-
 
+(setq-default indent-tabs-mode nil)
+(setq-default c-basic-offset 4)
+(setq-default tab-width 4)
+
 (setq c-tab-always-indent t)
 
 (setq cc-other-file-alist

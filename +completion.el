@@ -7,6 +7,7 @@
   (setq company-tooltip-flip-when-above t)
   (setq company-dabbrev-downcase nil)
 
+  (eval-after-load 'company '(add-to-list 'company-backends 'company-elisp))
   (eval-after-load 'company '(add-to-list 'company-backends 'company-irony))
   (eval-after-load 'company '(add-to-list 'company-backends 'company-irony-c-headers))
   (eval-after-load 'company '(add-to-list 'company-backends 'company-cmake)))
