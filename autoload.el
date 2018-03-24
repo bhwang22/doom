@@ -17,12 +17,4 @@
     (erase-buffer)
     (eshell-send-input)))
 
-;;;###autoload
-(defun +private/eshell-prompt ()
-  (concat (propertize (buffer-name) 'face `(:foreground ,(doom-color'red)))
-          " "
-          (propertize (abbreviate-file-name (eshell/pwd)) 'face 'eshell-prompt)
-          (propertize (+eshell--current-git-branch) 'face 'font-lock-function-name-face)
-          (propertize " λ " 'face 'font-lock-constant-face)))
-
 ;;; autoload.el ends here

@@ -20,8 +20,6 @@
 
  "C-c l c" '+private/clear-eshell
  "C-c l l" '+eshell/open-popup
- "C-c l o" 'multi-eshell-switch
- "C-c l O" 'multi-eshell-go-back
 
  "C-c t t" '=twitter
 
