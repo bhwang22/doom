@@ -10,6 +10,9 @@
  "A-C-b" 'sp-backward-sexp
  "A-C-d" 'sp-splice-sexp
 
+ "C-c d d" '+doom-dashboard/open
+ "C-c d n" 'neotree-toggle
+
  "C-c e s" 'ff-find-other-file
  "C-c e m" 'make-header
  "C-c e c" 'make-box-comment
@@ -23,8 +26,16 @@
 
  "C-c t t" '=twitter
 
- "C-c d d" '+doom-dashboard/open
- "C-c d n" 'neotree-toggle
+ "C-c w n" '+workspace/load-new
+ "C-c w d" '+workspace/display
+ "C-c w l" '+workspace/load
+ "C-c w L" '+workspace/load-session
+ "C-c w n" 'persp-next
+ "C-c w p" 'persp-prev
+ "C-c w s" '+workspace/save
+ "C-c w S" '+workspace/save-session
+ "C-c w ." '+workspace/switch-to
+ "C-c w k" '+workspace/kill-session
 
  (:prefix "C-c v" "m" 'magit-status))
 
@@ -33,6 +44,7 @@
 (which-key-add-key-based-replacements "C-c l" "eshell")
 (which-key-add-key-based-replacements "C-c t" "twitter")
 (which-key-add-key-based-replacements "C-c v" "versionning")
+(which-key-add-key-based-replacements "C-c w" "workspace")
 (which-key-add-key-based-replacements "C-c !" "checking")
 
 (provide '+bindings)

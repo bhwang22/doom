@@ -8,6 +8,7 @@
 (load! +lang|cc)
 (load! +mail)
 (load! +popup)
+(load! +twitter)
 (load! +ui)
 (load! +vc)
 

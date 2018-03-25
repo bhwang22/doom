@@ -14,6 +14,25 @@
 - its community (on discord) is most friendly
 - it's maintained by one developer, who keeps a vision and everything consistent
 
+** Prerequisites
+#+BEGIN_SRC shell
+$ brew tap d12frosted/emacs-plus
+$ brew install emacs-plus --HEAD
+$ brew install gpg2
+$ ln -s /usr/local/bin/gpg2 /usr/local/bin/gpg
+$ brew install pinentry
+$ brew install pinentry-mac
+$ vim ~/.gnupg/gpg-agent.conf
+#+END_SRC
+
+Insert:
+
+#+BEGIN_SRC
+allow-emacs-pinentry
+allow-loopback-pinentry
+pinentry-program /usr/local/bin/pinentry-mac
+#+END_SRC_
+
 ** Installation
 
 #+BEGIN_SRC shell
