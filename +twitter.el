@@ -1,7 +1,5 @@
 ;;;  -*- lexical-binding: t; -*-
 
-(setf epa-pinentry-mode 'loopback)
-
 (after! twittering-mode
   (setq twittering-connection-type-order '(wget curl urllib-http native urllib-https))
   (setq twittering-initial-timeline-spec-string '("#DoomEmacs" ":home" ":mentions" ":direct_messages"))
