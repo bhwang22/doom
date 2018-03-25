@@ -17,7 +17,7 @@
 ** Prerequisites
 
 #+BEGIN_SRC shell
-$ brew tap d12frosted/emacs-plus
+$ brew tap d12frosted/emacs-plus --without-spacemacs-icon
 $ brew install emacs-plus --HEAD
 $ brew install gpg2
 $ ln -s /usr/local/bin/gpg2 /usr/local/bin/gpg
