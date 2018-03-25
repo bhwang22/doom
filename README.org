@@ -15,6 +15,7 @@
 - it's maintained by one developer, who keeps a vision and everything consistent
 
 ** Prerequisites
+
 #+BEGIN_SRC shell
 $ brew tap d12frosted/emacs-plus
 $ brew install emacs-plus --HEAD
