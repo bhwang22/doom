@@ -2,6 +2,7 @@
 
 (package! magit-gitflow)
 (package! resize-window)
+(package! xterm-color)
 
 (provide 'packages)
 
