@@ -1,7 +1,7 @@
 ;;; config.el --- description -*- lexical-binding: t; -*-
 
 (load! +bindings)
-(load! +compilation)
+;; (load! +compilation)
 (load! +completion)
 (load! +editor)
 (load! +eshell)

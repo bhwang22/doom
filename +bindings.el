@@ -22,7 +22,7 @@
  "C-c e l" '+private/duplicate-line
 
  "C-c l c" '+private/clear-eshell
- "C-c l l" '+eshell/open-popup
+ "C-c l l" 'eshell
 
  "C-c t t" '=twitter
 
