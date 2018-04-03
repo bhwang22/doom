@@ -11,7 +11,7 @@
   (setq mu4e-change-filenames-when-moving t)
   (setq mu4e-view-show-images t)
   (setq mu4e-index-cleanup nil)
-  (setq mu4e-update-interval 30)
+  (setq mu4e-update-interval (* 60 5))
   (setq mu4e-headers-visible-lines 16)
   (setq mu4e-hide-index-messages nil)
   (setq mu4e-get-mail-command "mbsync -a")
