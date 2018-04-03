@@ -11,6 +11,7 @@
  "A-C-d" 'sp-splice-sexp
 
  "C-c d d" '+doom-dashboard/open
+ "C-c d f" 'recentf-open-files
  "C-c d n" 'neotree-toggle
 
  "C-c e s" 'ff-find-other-file
@@ -22,7 +23,14 @@
  "C-c e l" '+private/duplicate-line
 
  "C-c l c" '+private/clear-eshell
- "C-c l l" 'eshell
+ "C-c l l" '+eshell/open-popup
+ "C-c l n" '+eshell/next
+ "C-c l p" '+eshell/previous
+ "C-c l s" '+eshell/switch
+
+ "C-c o s" 'org-caldav-sync
+
+ "C-c p p" 'projectile-switch-open-project
 
  "C-c t t" '=twitter
 
@@ -42,6 +50,8 @@
 (which-key-add-key-based-replacements "C-c e" "editor")
 (which-key-add-key-based-replacements "C-c d" "doom")
 (which-key-add-key-based-replacements "C-c l" "eshell")
+(which-key-add-key-based-replacements "C-c o" "org")
+(which-key-add-key-based-replacements "C-c p" "projects")
 (which-key-add-key-based-replacements "C-c t" "twitter")
 (which-key-add-key-based-replacements "C-c v" "versionning")
 (which-key-add-key-based-replacements "C-c w" "workspace")

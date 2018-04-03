@@ -9,6 +9,7 @@
 (load! +lang|c)
 (load! +lang|cc)
 (load! +mail)
+(load! +org)
 (load! +popup)
 (load! +twitter)
 (load! +ui)
