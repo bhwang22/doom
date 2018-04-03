@@ -28,6 +28,9 @@
  "C-c l p" '+eshell/previous
  "C-c l s" '+eshell/switch
 
+ "C-c m m" 'mu4e
+ "C-c m s" 'message-send
+
  "C-c o s" 'org-caldav-sync
 
  "C-c p p" 'projectile-switch-open-project
@@ -50,6 +53,7 @@
 (which-key-add-key-based-replacements "C-c e" "editor")
 (which-key-add-key-based-replacements "C-c d" "doom")
 (which-key-add-key-based-replacements "C-c l" "eshell")
+(which-key-add-key-based-replacements "C-c m" "mail")
 (which-key-add-key-based-replacements "C-c o" "org")
 (which-key-add-key-based-replacements "C-c p" "projects")
 (which-key-add-key-based-replacements "C-c t" "twitter")
