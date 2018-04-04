@@ -31,7 +31,17 @@
  "C-c m m" 'mu4e
  "C-c m s" 'message-send
 
- "C-c o s" 'org-caldav-sync
+ "C-c o s"     'org-caldav-sync
+ "C-c o a a"   'org-agenda
+ "C-c o a t"   'org-todo-list
+ "C-c o a m"   'org-tags-view
+ "C-c o a v"   'org-search-view
+ "C-c o c"     'org-capture
+ "C-c o b"     'org-iswitchb
+ "C-c o e l b" 'org-beamer-export-to-latex
+ "C-c o e l B" 'org-beamer-export-as-latex
+ "C-c o e l P" 'org-beamer-export-to-pdf
+ "C-c o l"     'org-store-link
 
  "C-c p p" 'projectile-switch-open-project
 
@@ -52,16 +62,19 @@
 
  (:prefix "C-c v" "m" 'magit-status))
 
-(which-key-add-key-based-replacements "C-c e" "editor")
-(which-key-add-key-based-replacements "C-c d" "doom")
-(which-key-add-key-based-replacements "C-c l" "eshell")
-(which-key-add-key-based-replacements "C-c m" "mail")
-(which-key-add-key-based-replacements "C-c o" "org")
-(which-key-add-key-based-replacements "C-c p" "projects")
-(which-key-add-key-based-replacements "C-c t" "twitter")
-(which-key-add-key-based-replacements "C-c v" "versionning")
-(which-key-add-key-based-replacements "C-c w" "workspace")
-(which-key-add-key-based-replacements "C-c !" "checking")
+(which-key-add-key-based-replacements "C-c e"     "editor")
+(which-key-add-key-based-replacements "C-c d"     "doom")
+(which-key-add-key-based-replacements "C-c l"     "eshell")
+(which-key-add-key-based-replacements "C-c m"     "mail")
+(which-key-add-key-based-replacements "C-c o"     "org")
+(which-key-add-key-based-replacements "C-c o a"   "agenda")
+(which-key-add-key-based-replacements "C-c o e"   "export")
+(which-key-add-key-based-replacements "C-c o e l" "latex")
+(which-key-add-key-based-replacements "C-c p"     "projects")
+(which-key-add-key-based-replacements "C-c t"     "twitter")
+(which-key-add-key-based-replacements "C-c v"     "versionning")
+(which-key-add-key-based-replacements "C-c w"     "workspace")
+(which-key-add-key-based-replacements "C-c !"     "checking")
 
 (provide '+bindings)
 
