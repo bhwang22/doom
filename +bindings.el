@@ -37,13 +37,15 @@
 
  "C-c t t" '=twitter
 
+ "C-c w c" '+workspace/new
  "C-c w n" '+workspace/load-new
  "C-c w d" '+workspace/display
  "C-c w l" '+workspace/load
  "C-c w L" '+workspace/load-session
  "C-c w n" 'persp-next
  "C-c w p" 'persp-prev
- "C-c w s" '+workspace/save
+ "C-c w r" '+workspace/rename
+ "C-c w s" 'persp-save-state-to-file
  "C-c w S" '+workspace/save-session
  "C-c w ." '+workspace/switch-to
  "C-c w k" '+workspace/kill-session

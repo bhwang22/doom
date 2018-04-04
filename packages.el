@@ -2,10 +2,10 @@
 
 (package! ivy-posframe :disable t)
 (package! ivy-rtags :disable t)
-(package! rtags :disable t)
-(package! org-caldav)
 (package! magit-gitflow)
+(package! org-caldav)
 (package! resize-window)
+(package! rtags :disable t)
 (package! xterm-color)
 
 (provide 'packages)

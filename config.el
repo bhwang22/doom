@@ -3,6 +3,7 @@
 (load! +bindings)
 ;; (load! +compilation)
 (load! +completion)
+(load! +crypto)
 (load! +editor)
 (load! +eshell)
 (load! +header)

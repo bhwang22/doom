@@ -18,6 +18,7 @@
        (setq-local whitespace-style nil)))))
 
 (after! neotree
+  (setq doom-neotree-enable-variable-pitch nil)
   (setq neo-autorefresh t))
 
 (def-package! resize-window
