@@ -29,6 +29,7 @@
  "C-c l s" '+eshell/switch
 
  "C-c m m" 'mu4e
+ "C-c m i" '+private/force-mail-index
  "C-c m s" 'message-send
 
  "C-c o s"     'org-caldav-sync

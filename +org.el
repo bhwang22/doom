@@ -13,6 +13,30 @@
   (setq org-icalendar-timezone "Europe/Paris")
   :commands org-caldav-sync)
 
+(def-package! org-super-agenda
+  :commands (org-super-agenda-mode)
+  :config
+  (setq org-super-agenda-groups
+        '((:name "Log\n"
+                 :log t)
+          (:name "Schedule\n"
+                 :time-grid t)
+          (:name "Today\n"
+                 :scheduled today)
+          (:name "Habits\n"
+                 :habit t)
+          (:name "Due today\n"
+                 :deadline today)
+          (:name "Overdue\n"
+                 :deadline past)
+          (:name "Due soon\n"
+                 :deadline future)
+          (:name "Waiting\n"
+                 :todo "WAIT"
+                 :order 98)
+          (:name "Scheduled earlier\n"
+                 :scheduled past))))
+
 (provide '+org)
 
 ;;; +org.el ends here

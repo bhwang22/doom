@@ -17,4 +17,9 @@
     (erase-buffer)
     (eshell-send-input)))
 
+;;;###autoload
+(defun +private/force-mail-index ()
+  (interactive)
+  (mu4e-maildirs-extension-force-update '(16)))
+
 ;;; autoload.el ends here
