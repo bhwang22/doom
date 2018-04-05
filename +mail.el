@@ -25,7 +25,7 @@
 
   (setq mu4e-maildir (expand-file-name "~/Mail"))
   (setq mu4e-attachment-dir (expand-file-name "~/Mail/Attachements"))
-  (setq mu4e-get-mail-command "mbsync --all --new --delete --flags --pull --push --expunge --verbose")
+  (setq mu4e-get-mail-command "mbsync --all --new --renew --delete --flags --pull --push --expunge --verbose")
 
   (require 'mu4e-contrib)
 
@@ -59,10 +59,10 @@
       (user-mail-address      . "julien.wintz@me.com")
       (smtpmail-smtp-user     . "julien.wintz")))
 
-    (set! :email "GMail"
-      '((mu4e-sent-folder     . "/GMail/Sent")
-        (mu4e-drafts-folder   . "/GMail/Drafts")
-        (mu4e-trash-folder    . "/GMail/Trash")
+    (set! :email "Gmail"
+      '((mu4e-sent-folder     . "/Gmail/Sent")
+        (mu4e-drafts-folder   . "/Gmail/Drafts")
+        (mu4e-trash-folder    . "/Gmail/Trash")
         (user-full-name       . "Julien Wintz")
         (user-mail-address    . "jwintz@gmail.com")
         (smtpmail-smtp-user   . "jwintz@gmail.com")))
