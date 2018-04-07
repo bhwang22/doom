@@ -7,4 +7,3 @@
 (setq epa-pinentry-mode 'loopback)
 
 ;;; +crypto.el ends here
-

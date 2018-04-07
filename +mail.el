@@ -26,6 +26,10 @@
   (setq mu4e-maildir (expand-file-name "~/Mail"))
   (setq mu4e-attachment-dir (expand-file-name "~/Mail/Attachements"))
   (setq mu4e-get-mail-command "mbsync --all --new --renew --delete --flags --pull --push --expunge --verbose")
+  (setq mu4e-hide-index-messages nil)
+
+  (setq message-kill-buffer-on-exit t)
+  (setq message-send-mail-function 'message-send-mail-with-sendmail)
 
   (require 'mu4e-contrib)
 
@@ -36,12 +40,12 @@
 
   (setq smtpmail-stream-type 'starttls)
   (setq smtpmail-auth-credentials (expand-file-name "~/.authinfo.gpg"))
+  (setq smtpmail-smtp-server "smtp.inria.fr")
+  (setq smtpmail-smtp-service 587)
+
   (setq sendmail-program "msmtp")
 
   (setq send-mail-function 'smtpmail-send-it)
-
-  (setq smtpmail-smtp-server "smtp.inria.fr")
-  (setq smtpmail-smtp-service 587)
 
   (set! :email "Inria"
     '((mu4e-sent-folder       . "/Inria/Sent")
