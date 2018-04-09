@@ -37,6 +37,11 @@
           (:name "Scheduled earlier\n"
                  :scheduled past))))
 
+(after! org-mode
+  (setq org-capture-templates
+        '(("t" "Inbox" entry (file+headline "~/Org/inbox.org" "Inbox")
+           "* TODO %?\n  %i\n  %a"))))
+
 (provide '+org)
 
 ;;; +org.el ends here
