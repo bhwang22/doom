@@ -11,6 +11,7 @@
   (setq org-caldav-calendar-id "julien.wintz@inria.fr/Calendar")
   (setq org-caldav-inbox (expand-file-name "~/Org/calendar.org"))
   (setq org-icalendar-timezone "Europe/Paris")
+  (setq org-caldav-save-directory (expand-file-name doom-cache-dir))
   :commands org-caldav-sync)
 
 (def-package! org-super-agenda
