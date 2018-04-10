@@ -89,7 +89,7 @@
        twitter
 
        :config
-       (default +bindings +snippets +evil-commands))
+       (default +bindings +snippets))
 
 (provide 'init)
 
