@@ -86,6 +86,7 @@
        (write            ; emacs as a word processor (latex + org + markdown)
         +wordnut         ; wordnet (wn) search
         +langtool)       ; a proofreader (grammar/style check) for Emacs
+       twitter
 
        :config
        (default +bindings +snippets +evil-commands))
