@@ -1,11 +1,12 @@
 ;;; packages.el --- description -*- lexical-binding: t; -*-
 
-(package! cquery)
-(package! company-lsp)
+;; (package! cquery)
+;; (package! company-box)
+;; (package! company-lsp)
 (package! ivy-posframe :disable t)
 (package! ivy-rtags :disable t)
-(package! lsp-mode)
-(package! lsp-ui)
+;; (package! lsp-mode)
+;; (package! lsp-ui)
 (package! magit-gitflow)
 (package! org-caldav)
 (package! org-super-agenda)

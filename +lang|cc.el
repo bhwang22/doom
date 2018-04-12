@@ -19,24 +19,7 @@
         ("\\.hpp\\'" (".tpp" ".cpp" ".cxx" ".tcc" ".cc" ".C" ".c" ".h"))
         ("\\.hxx\\'" (".tpp" ".cpp" ".cxx" ".tcc" ".cc" ".C" ".c" ".h"))))
 
-(def-package! lsp-mode)
 
-(def-package! lsp-ui
-  :after lsp-mode
-  :config
-  (add-hook! 'lsp-mode-hook #'lsp-ui-mode))
-
-(def-package! company-lsp
-  :after lsp-mode
-  :config
-  (push 'company-lsp company-backends))
-
-(def-package! cquery
-  :after lsp-mode
-  :config
-  (require 'cquery)
-  (setq cquery-executable "/usr/local/bin/cquery")
-  (add-hook! cc-mode #'lsp-cquery-enable))
 
 (provide '+lang|cc)
 
