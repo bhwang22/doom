@@ -14,6 +14,12 @@
 (package! rtags :disable t)
 (package! xterm-color)
 
+;; (disable-packages! company-childframe)
+;; (disable-packages! company-irony)
+;; (disable-packages! flycheck-irony)
+;; (disable-packages! irony)
+;; (disable-packages! irony-eldoc)
+
 (provide 'packages)
 
 ;;; packages.el ends here

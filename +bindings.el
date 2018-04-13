@@ -51,7 +51,7 @@
  "C-c w c" '+workspace/new
  "C-c w n" '+workspace/load-new
  "C-c w d" '+workspace/display
- "C-c w l" '+workspace/load
+ "C-c w l" 'persp-load-state-from-file
  "C-c w L" '+workspace/load-session
  "C-c w n" 'persp-next
  "C-c w p" 'persp-prev
