@@ -19,8 +19,6 @@
         ("\\.hpp\\'" (".tpp" ".cpp" ".cxx" ".tcc" ".cc" ".C" ".c" ".h"))
         ("\\.hxx\\'" (".tpp" ".cpp" ".cxx" ".tcc" ".cc" ".C" ".c" ".h"))))
 
-
-
 (provide '+lang|cc)
 
 ;;; +lang|cc.el ends here
