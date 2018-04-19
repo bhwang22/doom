@@ -15,6 +15,7 @@
 (load! +twitter)
 (load! +ui)
 (load! +vc)
+(load! +workspaces)
 
 (provide 'config)
 
