@@ -14,6 +14,13 @@
  "C-c d f" 'recentf-open-files
  "C-c d n" 'neotree-toggle
 
+ "C-c d p o" '+popup/other
+ "C-c d p t" '+popup/toggle
+ "C-c d p c" '+popup/close
+ "C-c d p C" '+popup/close-all
+ "C-c d p r" '+popup/raise
+ "C-c d p R" '+popup/restore
+
  "C-c e s" 'ff-find-other-file
  "C-c e m" 'make-header
  "C-c e c" 'make-box-comment
