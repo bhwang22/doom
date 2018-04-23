@@ -68,6 +68,8 @@
  "C-c w ." '+workspace/switch-to
  "C-c w k" '+workspace/kill-session
 
+  "<f12>" 'toggle-frame-fullscreen
+
  (:prefix "C-c v" "m" 'magit-status))
 
 (which-key-add-key-based-replacements "C-c e"     "editor")

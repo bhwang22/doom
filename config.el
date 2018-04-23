@@ -1,5 +1,6 @@
 ;;; config.el --- description -*- lexical-binding: t; -*-
 
+(load! +behavior)
 (load! +bindings)
 (load! +compilation)
 (load! +completion)

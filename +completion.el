@@ -12,9 +12,6 @@
   (eval-after-load 'company '(add-to-list 'company-backends 'company-irony-c-headers))
   (eval-after-load 'company '(add-to-list 'company-backends 'company-cmake)))
 
-(after! irony
-  (setq irony-cdb-search-directory-list (quote ("." "build" "build-conda"))))
-
 (provide '+completion)
 
 ;;; +completion.el ends here
