@@ -12,6 +12,9 @@
 
 (setq doom-theme 'doom-nord)
 
+(unless (display-graphic-p)
+  (setq doom-theme nil))
+
 (add-variable-watcher
  'posframe--frame
  (lambda (_sym frame op _where)
