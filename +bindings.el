@@ -35,6 +35,7 @@
  "C-c l p" '+eshell/previous
  "C-c l s" '+eshell/switch
 
+ "C-c m s" 'mail-add-attachment
  "C-c m m" 'mu4e
  "C-c m i" '+private/force-mail-index
  "C-c m s" 'message-send
@@ -68,6 +69,7 @@
  "C-c w ." '+workspace/switch-to
  "C-c w k" '+workspace/kill-session
 
+  "<f10>" 'neotree-dir
   "<f12>" 'toggle-frame-fullscreen
 
  (:prefix "C-c v" "m" 'magit-status))

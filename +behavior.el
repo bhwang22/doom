@@ -8,4 +8,4 @@
             read-expression-map)
       [escape] nil)
 
-;;; +editor.el ends here
+;;; +behavior.el ends here

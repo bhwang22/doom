@@ -14,34 +14,14 @@
   (setq org-caldav-save-directory (expand-file-name doom-cache-dir))
   :commands org-caldav-sync)
 
-(def-package! org-super-agenda
-  :commands (org-super-agenda-mode)
-  :config
-  (setq org-super-agenda-groups
-        '((:name "Log\n"
-                 :log t)
-          (:name "Schedule\n"
-                 :time-grid t)
-          (:name "Today\n"
-                 :scheduled today)
-          (:name "Habits\n"
-                 :habit t)
-          (:name "Due today\n"
-                 :deadline today)
-          (:name "Overdue\n"
-                 :deadline past)
-          (:name "Due soon\n"
-                 :deadline future)
-          (:name "Waiting\n"
-                 :todo "WAIT"
-                 :order 98)
-          (:name "Scheduled earlier\n"
-                 :scheduled past))))
-
-(after! org-mode
+(after! org
   (setq org-capture-templates
         '(("t" "Inbox" entry (file+headline "~/Org/inbox.org" "Inbox")
            "* TODO %?\n  %i\n  %a"))))
+
+(after! org
+  (doom-themes-set-faces 'doom-nord
+    (org-property-value :foreground (doom-color 'teal))))
 
 (provide '+org)
 

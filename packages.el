@@ -4,7 +4,6 @@
 (package! ivy-rtags :disable t)
 (package! magit-gitflow)
 (package! org-caldav)
-(package! org-super-agenda)
 (package! resize-window)
 (package! rtags :disable t)
 (package! xterm-color)
