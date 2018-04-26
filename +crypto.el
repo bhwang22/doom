@@ -1,4 +1,4 @@
-;;;  -*- lexical-binding: t; -*-
+;;; +crypto.el -*- lexical-binding: t; -*-
 
 (setq auth-sources '("~/.authinfo.gpg"))
 (setq auth-source-save-behavior nil)

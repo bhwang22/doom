@@ -19,9 +19,9 @@
         '(("t" "Inbox" entry (file+headline "~/Org/inbox.org" "Inbox")
            "* TODO %?\n  %i\n  %a"))))
 
-(after! org
-  (doom-themes-set-faces 'doom-nord
-    (org-property-value :foreground (doom-color 'teal))))
+;; (after! org
+;;   (doom-themes-set-faces 'doom-nord
+;;     (org-property-value :foreground (doom-color 'teal))))
 
 (provide '+org)
 

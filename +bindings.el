@@ -10,6 +10,10 @@
  "A-C-b" 'sp-backward-sexp
  "A-C-d" 'sp-splice-sexp
 
+ "C-c b c" 'org2jekyll-create-draft
+ "C-c b p" 'org2jekyll-publish
+ "C-c b l" 'org2jekyll-list-posts
+
  "C-c d d" '+doom-dashboard/open
  "C-c d f" 'recentf-open-files
  "C-c d n" 'neotree-toggle
