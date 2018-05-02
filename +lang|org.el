@@ -4,6 +4,10 @@
   :config
   (setq url-gateway-method 'tls))
 
+(after! org
+  (doom-themes-set-faces 'doom-nord
+    (org-property-value :foreground (doom-color 'teal))))
+
 (def-package! org-caldav
   :config
   (setq plstore-cache-passphrase-for-symmetric-encryption t)
@@ -14,14 +18,93 @@
   (setq org-caldav-save-directory (expand-file-name doom-cache-dir))
   :commands org-caldav-sync)
 
+(def-package! org2jekyll
+  :defer t
+  :commands
+  (org2jekyll-create-draft org2jekyll-publish org2jekyll-list-posts)
+  :config
+  (setq org2jekyll-blog-author "jwintz")
+  (setq org2jekyll-source-directory (expand-file-name "~/Sites/jwintz.github.io/"))
+  (setq org2jekyll-jekyll-directory (expand-file-name "~/Sites/jwintz.github.io/"))
+  (setq org2jekyll-jekyll-drafts-dir "_drafts/")
+  (setq org2jekyll-jekyll-posts-dir "_posts/")
+  (setq org-publish-project-alist
+    `(("default"
+       :base-directory ,(org2jekyll-input-directory)
+       :base-extension "org"
+       :publishing-directory ,(org2jekyll-output-directory)
+       :publishing-function org-html-publish-to-html
+       :headline-levels 4
+       :section-numbers nil
+       :with-toc nil
+       :html-preamble t
+       :recursive t
+       :make-index t
+       :html-extension "html"
+       :body-only t)
+      ("post"
+       :base-directory ,(org2jekyll-input-directory)
+       :base-extension "org"
+       :publishing-directory ,(org2jekyll-output-directory org2jekyll-jekyll-posts-dir)
+       :publishing-function org-html-publish-to-html
+       :headline-levels 4
+       :section-numbers nil
+       :with-toc nil
+       :html-preamble t
+       :recursive t
+       :make-index t
+       :html-extension "html"
+       :body-only t)
+      ("home"
+       :base-directory ,(org2jekyll-input-directory)
+       :base-extension "org"
+       :publishing-directory ,(org2jekyll-output-directory)
+       :publishing-function org-html-publish-to-html
+       :headline-levels 4
+       :section-numbers nil
+       :with-toc nil
+       :html-preamble t
+       :recursive t
+       :make-index t
+       :html-extension "html"
+       :body-only t)
+      ("page"
+       :base-directory ,(org2jekyll-input-directory)
+       :base-extension "org"
+       :publishing-directory ,(org2jekyll-output-directory)
+       :publishing-function org-html-publish-to-html
+       :headline-levels 4
+       :section-numbers nil
+       :with-toc nil
+       :html-preamble t
+       :recursive t
+       :make-index t
+       :html-extension "html"
+       :body-only t)
+      ("img"
+       :base-directory ,(org2jekyll-input-directory "img")
+       :base-extension "jpg\\|png"
+       :publishing-directory ,(org2jekyll-output-directory "img")
+       :publishing-function org-publish-attachment
+       :recursive t)
+      ("js"
+       :base-directory ,(org2jekyll-input-directory "js")
+       :base-extension "js"
+       :publishing-directory ,(org2jekyll-output-directory "js")
+       :publishing-function org-publish-attachment
+       :recursive t)
+      ("css"
+       :base-directory ,(org2jekyll-input-directory "css")
+       :base-extension "css\\|el"
+       :publishing-directory ,(org2jekyll-output-directory "css")
+       :publishing-function org-publish-attachment
+       :recursive t)
+      ("web" :components ("img" "js" "css")))))
+
 (after! org
   (setq org-capture-templates
         '(("t" "Inbox" entry (file+headline "~/Org/inbox.org" "Inbox")
            "* TODO %?\n  %i\n  %a"))))
-
-;; (after! org
-;;   (doom-themes-set-faces 'doom-nord
-;;     (org-property-value :foreground (doom-color 'teal))))
 
 (provide '+org)
 
