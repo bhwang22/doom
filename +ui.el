@@ -1,7 +1,7 @@
 ;;; +ui.el --- description -*- lexical-binding: t; -*-
 
 (add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
-(add-to-list 'default-frame-alist '(ns-appearance . dark))
+(add-to-list 'default-frame-alist '(ns-appearance . light))
 
 (setq ns-use-proxy-icon nil)
 
@@ -10,7 +10,9 @@
 (setq doom-unicode-font (font-spec :family "Source Code Variable"))
 (setq doom-big-font (font-spec :family "Source Code Variable" :size 19))
 
-(setq doom-theme 'doom-nord)
+(setq doom-theme 'doom-nord-light)
+
+(push '(doom-nord-light . nil) +doom-solaire-themes)
 
 (unless (display-graphic-p)
   (setq doom-theme nil))

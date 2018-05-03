@@ -25,6 +25,7 @@
  "C-c d p r" '+popup/raise
  "C-c d p R" '+popup/restore
 
+ "C-c e e" 'iedit-mode
  "C-c e s" 'ff-find-other-file
  "C-c e m" 'make-header
  "C-c e c" 'make-box-comment

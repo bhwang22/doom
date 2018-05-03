@@ -1,5 +1,7 @@
 ;;; packages.el --- description -*- lexical-binding: t; -*-
 
+(package! anzu)
+(package! iedit)
 (package! ivy-posframe :disable t)
 (package! ivy-rtags :disable t)
 (package! magit-gitflow)
