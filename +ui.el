@@ -12,7 +12,7 @@
 
 (setq doom-theme 'doom-nord-light)
 
-(push '(doom-nord-light . nil) +doom-solaire-themes)
+(push '(doom-nord-light . t) +doom-solaire-themes)
 
 (unless (display-graphic-p)
   (setq doom-theme nil))
