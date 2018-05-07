@@ -4,9 +4,9 @@
   :config
   (setq url-gateway-method 'tls))
 
-(after! org
-  (doom-themes-set-faces 'doom-nord
-    (org-property-value :foreground (doom-color 'teal))))
+;; (after! org
+;;   (doom-themes-set-faces 'doom-nord
+;;     (org-property-value :foreground (doom-color 'teal))))
 
 (def-package! org-caldav
   :config
