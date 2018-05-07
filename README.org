@@ -42,5 +42,6 @@ $ git clone -b develop --single-branch https://github.com/jwintz/doom.git .doom.
 $ cd ~/.emacs.d
 $ make
 $ make doctor
+$ cd ~/.doom.d
+$ make
 #+END_SRC
-

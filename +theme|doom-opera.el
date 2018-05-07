@@ -1,4 +1,4 @@
-;;; doom-opera-theme.el --- Opera theme
+;;; +theme|doom-opera.el --- Opera theme
 
 (require 'doom-themes)
 
@@ -144,4 +144,4 @@ determine the exact padding."
 
 (push '(doom-opera . t) +doom-solaire-themes)
 
-;;; doom-opera-theme.el ends here
+;;; +theme|doom-opera.el ends here
