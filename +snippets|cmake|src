@@ -1,0 +1,45 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: src
+# key: src
+# binding: direct-keybinding
+# --
+project($0)
+
+## #################################################################
+## Sources
+## #################################################################
+
+set(\${PROJECT_NAME}_HEADERS)
+
+set(\${PROJECT_NAME}_SOURCES)
+
+## #################################################################
+## Build rules
+## #################################################################
+
+add_library(\${PROJECT_NAME}
+  \${\${PROJECT_NAME}_SOURCES}
+  \${\${PROJECT_NAME}_HEADERS})
+
+qt5_use_modules(\${PROJECT_NAME} Core)
+
+## #################################################################
+## Export header file
+## #################################################################
+
+generate_export_header(\${PROJECT_NAME} EXPORT_FILE_NAME "\${PROJECT_NAME}Export.h")
+
+add_custom_command(TARGET \${PROJECT_NAME} PRE_BUILD
+  COMMAND \${CMAKE_COMMAND} ARGS -E copy_if_different "\${\${PROJECT_NAME}_BINARY_DIR}/\${PROJECT_NAME}Export.h" "\${CMAKE_BINARY_DIR}"
+  COMMAND \${CMAKE_COMMAND} ARGS -E copy_if_different "\${\${PROJECT_NAME}_BINARY_DIR}/\${PROJECT_NAME}Export.h" "\${CMAKE_BINARY_DIR}/\${PROJECT_NAME}Export")
+
+set(\${PROJECT_NAME}_HEADERS
+ \${\${PROJECT_NAME}_HEADERS}
+"\${CMAKE_BINARY_DIR}/\${PROJECT_NAME}Export"
+"\${CMAKE_BINARY_DIR}/\${PROJECT_NAME}Export.h")
+
+## ###################################################################
+## Install rules - targets
+## ###################################################################
+
+install(TARGETS \${PROJECT_NAME} DESTINATION lib)
