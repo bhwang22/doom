@@ -1,77 +1,77 @@
-;;; +theme|doom-opera.el --- Opera theme
+;;; +theme|doom-opera-light.el --- Opera-Light theme
 
 (require 'doom-themes)
 
-(defgroup doom-opera-theme nil
+(defgroup doom-opera-light-theme nil
   "Options for doom-themes"
   :group 'doom-themes)
 
-(defcustom doom-opera-brighter-modeline nil
+(defcustom doom-opera-light-brighter-modeline nil
   "If non-nil, more vivid colors will be used to style the mode-line."
-  :group 'doom-opera-theme
+  :group 'doom-opera-light-theme
   :type 'boolean)
 
-(defcustom doom-opera-brighter-comments nil
+(defcustom doom-opera-light-brighter-comments nil
   "If non-nil, comments will be highlighted in more vivid colors."
-  :group 'doom-opera-theme
+  :group 'doom-opera-light-theme
   :type 'boolean)
 
-(defcustom doom-opera-comment-bg doom-opera-brighter-comments
+(defcustom doom-opera-light-comment-bg doom-opera-light-brighter-comments
   "If non-nil, comments will have a subtle, darker background. Enhancing their
 legibility."
-  :group 'doom-opera-theme
+  :group 'doom-opera-light-theme
   :type 'boolean)
 
-(defcustom doom-opera-padded-modeline doom-themes-padded-modeline
+(defcustom doom-opera-light-padded-modeline doom-themes-padded-modeline
   "If non-nil, adds a 4px padding to the mode-line. Can be an integer to
 determine the exact padding."
-  :group 'doom-opera-theme
+  :group 'doom-opera-light-theme
   :type '(or integer boolean))
 
-(defcustom doom-opera-region-highlight t
+(defcustom doom-opera-light-region-highlight t
   "Determines the selection highlight style. Can be 'frost, 'snowstorm or t
 (default)."
-  :group 'doom-opera-theme
+  :group 'doom-opera-light-theme
   :type 'symbol)
 
-(def-doom-theme doom-opera
-  "A dark opera theme."
+(def-doom-theme doom-opera-light
+  "A dark opera-light theme."
 
   ;; name        default   256       16
-  ((bg         '("#323334" nil       nil            ))
-   (bg-alt     '("#222224" nil       nil            ))
-   (base0      '("#000000" "black"   "black"        ))
-   (base1      '("#1e1e1e" "#1e1e1e" "brightblack"  ))
-   (base2      '("#2e2e2e" "#2e2e2e" "brightblack"  ))
-   (base3      '("#262626" "#262626" "brightblack"  ))
-   (base4      '("#3f3f3f" "#3f3f3f" "brightblack"  ))
-   (base5      '("#525252" "#525252" "brightblack"  ))
-   (base6      '("#6b6b6b" "#6b6b6b" "brightblack"  ))
-   (base7      '("#979797" "#979797" "brightblack"  ))
-   (base8      '("#dfdfdf" "#dfdfdf" "white"        ))
-   (fg         '("#eceff4" "#dfdfdf" "white"        ))
-   (fg-alt     '("#727269" "#bfbfbf" "brightwhite"  ))
+  ((bg         '("#fafafa" nil       nil ))
+   (bg-alt     '("#eeeeee" nil       nil ))
+   (base0      '("#fafafa" "#dfdfdf" nil ))
+   (base1      '("#f5f5f5" "#979797" nil ))
+   (base2      '("#eeeeee" "#6b6b6b" nil ))
+   (base3      '("#e0e0e0" "#525252" nil ))
+   (base4      '("#bdbdbd" "#3f3f3f" nil ))
+   (base5      '("#9e9e9e" "#262626" nil ))
+   (base6      '("#757575" "#2e2e2e" nil ))
+   (base7      '("#616161" "#1e1e1e" nil ))
+   (base8      '("#424242" "black"   nil ))
+   (fg         '("#2a2a2a" "#2a2a2a" nil ))
+   (fg-alt     '("#454545" "#757575" nil ))
 
    (grey       base4)
-   (red        '("#C16069" "#ff6655" "red"          ))
-   (orange     '("#D2876D" "#dd8844" "brightred"    ))
-   (green      '("#A2BF8A" "#99bb66" "green"        ))
-   (teal       '("#8EBCBB" "#44b9b1" "brightgreen"  ))
-   (yellow     '("#ECCC87" "#ECBE7B" "yellow"       ))
-   (blue       '("#80A0C2" "#51afef" "brightblue"   ))
-   (dark-blue  '("#5C748E" "#2257A0" "blue"         ))
-   (magenta    '("#B58DAE" "#c678dd" "magenta"      ))
-   (violet     '("#5D80AE" "#a9a1e1" "brightmagenta"))
-   (cyan       '("#86C0D1" "#46D9FF" "brightcyan"   ))
-   (dark-cyan  '("#507681" "#5699AF" "cyan"         ))
+   (red        '("#99324b" "#ff6655" nil ))
+   (orange     '("#ac4426" "#dd8844" nil ))
+   (green      '("#4f894c" "#99bb66" nil ))
+   (teal       '("#29838d" "#44b9b1" nil ))
+   (yellow     '("#9a7500" "#ECBE7B" nil ))
+   (blue       '("#3b6ea8" "#51afef" nil ))
+   (dark-blue  '("#5272AF" "#2257A0" nil ))
+   (magenta    '("#97365b" "#c678dd" nil ))
+   (violet     '("#842879" "#a9a1e1" nil ))
+   (cyan       '("#398eac" "#46D9FF" nil ))
+   (dark-cyan  '("#2c7088" "#5699AF" nil ))
 
    ;; face categories -- required for all themes
    (highlight      blue)
    (vertical-bar   (doom-darken base1 0.2))
    (selection      dark-blue)
    (builtin        teal)
-   (comments       (if doom-opera-brighter-comments dark-cyan (doom-lighten base5 0.2)))
-   (doc-comments   (doom-lighten (if doom-opera-brighter-comments dark-cyan base5) 0.25))
+   (comments       (if doom-opera-light-brighter-comments dark-cyan (doom-lighten base5 0.2)))
+   (doc-comments   (doom-lighten (if doom-opera-light-brighter-comments dark-cyan base5) 0.25))
    (constants      magenta)
    (functions      teal)
    (keywords       blue)
@@ -91,10 +91,10 @@ determine the exact padding."
 
    ;; custom categories
    (hidden     `(,(car bg) "black" "black"))
-   (-modeline-bright doom-opera-brighter-modeline)
+   (-modeline-bright doom-opera-light-brighter-modeline)
    (-modeline-pad
-    (when doom-opera-padded-modeline
-      (if (integerp doom-opera-padded-modeline) doom-opera-padded-modeline 4)))
+    (when doom-opera-light-padded-modeline
+      (if (integerp doom-opera-light-padded-modeline) doom-opera-light-padded-modeline 4)))
 
    (modeline-fg     nil)
    (modeline-fg-alt base5)
@@ -117,7 +117,7 @@ determine the exact padding."
 
    (font-lock-comment-face
     :foreground comments
-    :background (if doom-opera-comment-bg (doom-lighten bg 0.05)))
+    :background (if doom-opera-light-comment-bg (doom-lighten bg 0.05)))
    (font-lock-doc-face
     :inherit 'font-lock-comment-face
     :foreground doc-comments)
@@ -142,8 +142,6 @@ determine the exact padding."
     :background modeline-bg-inactive-l
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive-l)))))
 
-(add-to-list 'default-frame-alist '(ns-appearance . dark))
+(push '(doom-opera-light . t) +doom-solaire-themes)
 
-(push '(doom-opera . t) +doom-solaire-themes)
-
-;;; +theme|doom-opera.el ends here
+;;; +theme|doom-opera-light.el ends here
