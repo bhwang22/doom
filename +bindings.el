@@ -1,5 +1,7 @@
 ;;; +bindings.el --- description -*- lexical-binding: t; -*-
 
+(global-set-key (kbd "C-c o") nil)
+
 (map!
 
  "C-+" 'text-scale-increase

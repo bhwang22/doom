@@ -17,7 +17,8 @@
       (company           ; the ultimate code completion backend
        +auto
        +childframe)
-       ivy               ; a search engine for love and life
+       (ivy               ; a search engine for love and life
+        +childframe)     ; uses childframes for popups (Emacs 26+ only)
 
        :ui
        doom              ; what makes DOOM look the way it does
@@ -27,7 +28,6 @@
       ;evil-goggles      ; display visual hints when editing in evil
        hl-todo           ; highlight TODO/FIXME/NOTE tags
        nav-flash         ; blink the current line after jumping
-       posframe          ; use child frames where possible (Emacs 26+ only)
        window-select     ; visually switch windows
 
        :tools
