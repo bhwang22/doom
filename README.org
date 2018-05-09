@@ -39,9 +39,10 @@ pinentry-program /usr/local/bin/pinentry-mac
 #+BEGIN_SRC shell
 $ git clone -b develop --single-branch https://github.com/jwintz/doom-emacs.git .emacs.d
 $ git clone -b develop --single-branch https://github.com/jwintz/doom.git .doom.d
+$ cd ~/.doom.d
+$ make
 $ cd ~/.emacs.d
 $ make
 $ make doctor
-$ cd ~/.doom.d
-$ make
+$ make compile
 #+END_SRC

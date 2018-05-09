@@ -20,7 +20,7 @@
       (company           ; the ultimate code completion backend
        +auto
        +childframe)
-       (ivy               ; a search engine for love and life
+       (ivy              ; a search engine for love and life
         +childframe)     ; uses childframes for popups (Emacs 26+ only)
 
        :ui
