@@ -6,6 +6,9 @@
         +defaults)       ; default popup rules
        debugger          ; FIXME stepping through code, to help you add bugs
        eval              ; run code, run (also, repls)
+       (lookup           ; helps you navigate your code and documentation
+        +devdocs         ; ...on devdocs.io online
+        +docsets)        ; ...or in Dash docsets locally                         ;
        services          ; TODO managing external services & code builders
        snippets          ; my elves. They type so I don't have to
        spellcheck        ; tasing you for misspelling mispelling
@@ -25,7 +28,6 @@
        doom-dashboard    ; a nifty splash screen for Emacs
        doom-modeline     ; a snazzy Atom-inspired mode-line
        doom-quit         ; DOOM quit-message prompts when you quit Emacs
-      ;evil-goggles      ; display visual hints when editing in evil
        hl-todo           ; highlight TODO/FIXME/NOTE tags
        nav-flash         ; blink the current line after jumping
        window-select     ; visually switch windows
@@ -36,15 +38,13 @@
        eshell            ; a consistent, cross-platform shell (WIP)
        gist              ; interacting with github gists
        imenu             ; an imenu sidebar and searchable code index
-      ;impatient-mode    ; show off code over HTTP
        make              ; run make tasks from Emacs
        magit             ;
        neotree           ; a project drawer, like NERDTree for vim
-      ;pdf               ; pdf enhancements
+       pdf               ; pdf enhancements
        rgb               ; creating color strings
        rotate-text       ; cycle region at point between text candidates
        term              ; terminals in Emacs
-      ;tmux              ; an API for interacting with tmux
        upload            ; map local to remote projects via ssh/ftp
 
        :lang
@@ -61,11 +61,11 @@
       ;ess               ; emacs speaks statistics
       ;go                ; the hipster dialect
        javascript        ; all(hope(abandon(ye(who(enter(here))))))
-      ;julia             ; a better, faster MATLAB
+       julia             ; a better, faster MATLAB
       (latex             ; writing papers in Emacs has never been so fun
        +latexmk
        +preview-pane)
-      ;lua               ; one-based indices? one-based indices
+       lua               ; one-based indices? one-based indices
        markdown          ; writing docs for people to ignore
        (org              ; organize your plain life in plain text
         +attach          ; custom attachment system
@@ -78,8 +78,8 @@
        python            ; beautiful is better than ugly
        rest              ; Emacs as a REST client
        ruby              ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
-      ;rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
-      ;scala             ; java, but good
+       rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
+       scala             ; java, but good
        sh                ; she sells (ba|z)sh shells on the C xor
        swift             ; who asked for emoji variables?
        typescript        ; javascript, but better
@@ -87,10 +87,10 @@
 
        :app
        email             ; emacs as an email client
+       twitter
        (write            ; emacs as a word processor (latex + org + markdown)
         +wordnut         ; wordnet (wn) search
         +langtool)       ; a proofreader (grammar/style check) for Emacs
-       twitter
 
        :config
        (default +bindings +snippets))
