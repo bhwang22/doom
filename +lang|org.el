@@ -101,6 +101,18 @@
        :recursive t)
       ("web" :components ("img" "js" "css")))))
 
+(defun org-custom-link-img-follow (path)
+  (org-open-file-with-emacs
+   (format "/Users/jwintz/Sites/jwintz.github.io/img/%s" path)))
+
+(defun org-custom-link-img-export (path desc format)
+  (cond
+   ((eq format 'html)
+    (format "<img src=\"/img/%s\" alt=\"%s\"/>" path desc))))
+
+(after! org
+  (org-link-set-parameters "img" :follow 'org-custom-link-img-follow :export 'org-custom-link-img-export))
+
 (after! org
   (setq org-capture-templates
         '(("t" "Inbox" entry (file+headline "~/Org/inbox.org" "Inbox")
