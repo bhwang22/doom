@@ -14,11 +14,10 @@
        workspaces        ; tab emulation, persistence & separate workspaces
 
        :completion
-      (company           ; the ultimate code completion backend
+       (company          ; the ultimate code completion backend
        +auto
        +childframe)
-       (ivy              ; a search engine for love and life
-        +childframe)     ; uses childframes for popups (Emacs 26+ only)
+       ivy               ; a search engine for love and life
 
        :ui
        doom              ; what makes DOOM look the way it does

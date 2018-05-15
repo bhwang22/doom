@@ -1,4 +1,4 @@
-;;; packages.el --- description -*- lexical-binding: t; -*-
+;;; packages.el --- description -*- no-byte-compile: t; -*-
 
 (package! anzu)
 (package! iedit)
