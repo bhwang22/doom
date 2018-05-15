@@ -42,6 +42,7 @@
  "C-c l n" '+eshell/next
  "C-c l p" '+eshell/previous
  "C-c l s" '+eshell/switch
+ "C-c l r" '+private/eshell-history
 
  "C-c m s" 'mail-add-attachment
  "C-c m m" 'mu4e

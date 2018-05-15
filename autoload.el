@@ -18,6 +18,21 @@
     (eshell-send-input)))
 
 ;;;###autoload
+(defun +private/eshell-history ()
+  (interactive)
+  (require 'em-hist)
+  (let* ((start-pos (save-excursion (eshell-bol) (point)))
+         (end-pos (point))
+         (input (buffer-substring-no-properties start-pos end-pos))
+         (command (ivy-read "Command: "
+                            (delete-dups
+                             (when (> (ring-size eshell-history-ring) 0)
+                               (ring-elements eshell-history-ring)))
+                            :initial-input input)))
+    (setf (buffer-substring start-pos end-pos) command)
+    (end-of-line)))
+
+;;;###autoload
 (defun +private/force-mail-index ()
   (interactive)
   (mu4e-maildirs-extension-force-update '(16)))
