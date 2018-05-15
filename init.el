@@ -1,9 +1,6 @@
 ;;; init.el --- description -*- lexical-binding: t; -*-
 
 (doom! :feature
-       (popup            ; tame sudden yet inevitable temporary windows
-        +all             ; catch all popups that start with an asterix
-        +defaults)       ; default popup rules
        debugger          ; FIXME stepping through code, to help you add bugs
        eval              ; run code, run (also, repls)
        (lookup           ; helps you navigate your code and documentation
@@ -30,6 +27,10 @@
        doom-quit         ; DOOM quit-message prompts when you quit Emacs
        hl-todo           ; highlight TODO/FIXME/NOTE tags
        nav-flash         ; blink the current line after jumping
+       neotree           ; a project drawer, like NERDTree for vim
+       (popup            ; tame sudden yet inevitable temporary windows
+        +all             ; catch all popups that start with an asterix
+        +defaults)       ; default popup rules
        window-select     ; visually switch windows
 
        :tools
@@ -40,7 +41,6 @@
        imenu             ; an imenu sidebar and searchable code index
        make              ; run make tasks from Emacs
        magit             ;
-       neotree           ; a project drawer, like NERDTree for vim
        pdf               ; pdf enhancements
        rgb               ; creating color strings
        rotate-text       ; cycle region at point between text candidates
