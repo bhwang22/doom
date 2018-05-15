@@ -36,7 +36,7 @@
        dired             ; making dired pretty [functional]
        electric-indent   ; smarter, keyword-based electric-indent
        eshell            ; a consistent, cross-platform shell (WIP)
-       gist              ; interacting with github gists
+      ;gist              ; interacting with github gists
        imenu             ; an imenu sidebar and searchable code index
        make              ; run make tasks from Emacs
        magit             ;

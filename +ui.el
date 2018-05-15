@@ -17,12 +17,21 @@
 (unless (display-graphic-p)
   (setq doom-theme nil))
 
-(add-variable-watcher
- 'posframe--frame
- (lambda (_sym frame op _where)
-   (when (and (eq op 'set) frame)
-     (with-selected-frame frame
-       (setq-local whitespace-style nil)))))
+(after! posframe
+  (add-variable-watcher
+   'posframe--frame
+   (lambda (_sym frame op _where)
+     (when (and (eq op 'set) frame)
+       (with-selected-frame frame
+         (setq-local whitespace-style nil))))))
+
+(defun doom*fix-whitespace-mode-in-childframes (orig-fn &rest args)
+    (with-selected-frame (apply orig-fn args)
+      (setq-local whitespace-style nil)
+      (selected-frame)))
+
+(advice-add #'company-box--make-frame :around #'doom*fix-whitespace-mode-in-childframes)
+(advice-add #'posframe--create-posframe :around #'doom*fix-whitespace-mode-in-childframes)
 
 (after! neotree
   (setq doom-neotree-enable-variable-pitch nil)
