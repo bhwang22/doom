@@ -68,6 +68,7 @@
  "C-c w c" '+workspace/new
  "C-c w n" '+workspace/load-new
  "C-c w d" '+workspace/display
+ "C-c w D" '+workspace/delete
  "C-c w l" 'persp-load-state-from-file
  "C-c w L" '+workspace/load-session
  "C-c w n" 'persp-next
@@ -78,8 +79,8 @@
  "C-c w ." '+workspace/switch-to
  "C-c w k" '+workspace/kill-session
 
-  "<f10>" 'neotree-dir
-  "<f12>" 'toggle-frame-fullscreen
+ "<f10>" 'neotree-dir
+ "<f12>" 'toggle-frame-fullscreen
 
  (:prefix "C-c v" "m" 'magit-status))
 
