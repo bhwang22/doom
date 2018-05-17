@@ -40,6 +40,7 @@
  "C-c l c" '+private/clear-eshell
  "C-c l l" '+eshell/open-popup
  "C-c l n" '+eshell/next
+ "C-c l o" '+eshell/open
  "C-c l p" '+eshell/previous
  "C-c l s" '+eshell/switch
  "C-c l r" '+private/eshell-history

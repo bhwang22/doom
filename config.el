@@ -2,6 +2,7 @@
 
 (load! +behavior)
 (load! +bindings)
+(load! +checking)
 (load! +compilation)
 (load! +completion)
 (load! +crypto)
