@@ -10,6 +10,6 @@
             read-expression-map)
       [escape] nil)
 
-(add-to-list 'auto-mode-alist '("[Mm]akefile" . makefile-mode))
+(add-to-list 'auto-mode-alist '("/[Mm]akefile\\'" . makefile-mode))
 
 ;;; +behavior.el ends here
