@@ -1,3 +1,4 @@
+
 ;;; +bindings.el --- description -*- lexical-binding: t; -*-
 
 (global-set-key (kbd "C-c o") nil)
@@ -19,6 +20,7 @@
 
  "C-c d d" '+doom-dashboard/open
  "C-c d f" 'recentf-open-files
+ "C-c d l" 'global-command-log-mode
  "C-c d n" 'neotree-toggle
 
  "C-c d p o" '+popup/other
