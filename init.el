@@ -32,12 +32,14 @@
         +defaults)       ; default popup rules
        window-select     ; visually switch windows
 
-       :tools
+       :emacs
        dired             ; making dired pretty [functional]
+       ediff             ; comparing files in Emacs
        electric-indent   ; smarter, keyword-based electric-indent
        eshell            ; a consistent, cross-platform shell (WIP)
-      ;gist              ; interacting with github gists
        imenu             ; an imenu sidebar and searchable code index
+
+       :tools
        make              ; run make tasks from Emacs
        magit             ;
        pdf               ; pdf enhancements
