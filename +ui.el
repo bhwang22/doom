@@ -12,7 +12,7 @@
 (setq doom-unicode-font (font-spec :family "Source Code Variable"))
 (setq doom-big-font (font-spec :family "Source Code Variable" :size 19))
 
-(setq doom-theme 'doom-opera)
+(setq doom-theme 'doom-nord)
 
 (unless (display-graphic-p)
   (setq doom-theme nil))
