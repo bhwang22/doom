@@ -16,6 +16,8 @@
 
 ** Prerequisites
 
+*** MacOSX
+
 #+BEGIN_SRC shell
 $ brew tap d12frosted/emacs-plus
 $ brew install emacs-plus --HEAD --without-spacemacs-icon
@@ -24,6 +26,7 @@ $ ln -s /usr/local/bin/gpg2 /usr/local/bin/gpg
 $ brew install pinentry
 $ brew install pinentry-mac
 $ vim ~/.gnupg/gpg-agent.conf
+$ gpg2 --import public.key
 #+END_SRC
 
 Insert:
@@ -33,6 +36,23 @@ allow-emacs-pinentry
 allow-loopback-pinentry
 pinentry-program /usr/local/bin/pinentry-mac
 #+END_SRC
+
+*** Linux
+
+#+BEGIN_SRC shell
+$ [dnf|apt] install pinentry
+$ [dnf|apt] install pinentry-gnome3
+$ vim ~/.gnupg/gpg-agent.conf
+$ gpg2 --import public.key
+#+END_SRC
+
+Insert:
+
+#+BEGIN_SRC
+allow-emacs-pinentry
+allow-loopback-pinentry
+pinentry-program /usr/bin/pinentry
+#+END_SR
 
 ** Installation
 
