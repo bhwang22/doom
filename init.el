@@ -83,7 +83,6 @@
        scala             ; java, but good
        sh                ; she sells (ba|z)sh shells on the C xor
        swift             ; who asked for emoji variables?
-       typescript        ; javascript, but better
        web               ; the tubes
 
        :app
