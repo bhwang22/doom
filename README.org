@@ -52,7 +52,7 @@ Insert:
 allow-emacs-pinentry
 allow-loopback-pinentry
 pinentry-program /usr/bin/pinentry
-#+END_SR
+#+END_SRC
 
 ** Installation
 
