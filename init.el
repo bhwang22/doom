@@ -35,7 +35,7 @@
        :emacs
        dired             ; making dired pretty [functional]
        ediff             ; comparing files in Emacs
-       electric-indent   ; smarter, keyword-based electric-indent
+       electric          ; smarter, keyword-based electric-indent
        eshell            ; a consistent, cross-platform shell (WIP)
        imenu             ; an imenu sidebar and searchable code index
 
@@ -79,7 +79,7 @@
        python            ; beautiful is better than ugly
        rest              ; Emacs as a REST client
        ruby              ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
-       rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
+      ;rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()
        scala             ; java, but good
        sh                ; she sells (ba|z)sh shells on the C xor
        swift             ; who asked for emoji variables?

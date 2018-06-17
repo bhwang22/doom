@@ -13,8 +13,6 @@
 (load! "+lang|cc")
 (load! "+lang|org")
 (load! "+mail")
-(load! "+popup")
-(load! "+snippets")
 (load! "+twitter")
 (load! "+ui")
 (load! "+vc")

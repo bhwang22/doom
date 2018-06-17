@@ -47,7 +47,7 @@
 
   (setq send-mail-function 'smtpmail-send-it)
 
-  (set! :email "Inria"
+  (set-email-account! "Inria"
     '((mu4e-sent-folder       . "/Inria/Sent")
       (mu4e-drafts-folder     . "/Inria/Drafts")
       (mu4e-trash-folder      . "/Inria/Trash")
@@ -55,7 +55,7 @@
       (user-mail-address      . "julien.wintz@inria.fr")
       (smtpmail-smtp-user     . "jwintz")) t)
 
-  (set! :email "iCloud"
+  (set-email-account! :email "iCloud"
     '((mu4e-sent-folder       . "/iCloud/Sent Messages")
       (mu4e-drafts-folder     . "/iCloud/Drafts")
       (mu4e-trash-folder      . "/iCloud/Trash")
@@ -63,17 +63,17 @@
       (user-mail-address      . "julien.wintz@me.com")
       (smtpmail-smtp-user     . "julien.wintz")))
 
-    (set! :email "Gmail"
-      '((mu4e-sent-folder     . "/Gmail/Sent")
-        (mu4e-drafts-folder   . "/Gmail/Drafts")
-        (mu4e-trash-folder    . "/Gmail/Trash")
-        (user-full-name       . "Julien Wintz")
-        (user-mail-address    . "jwintz@gmail.com")
-        (smtpmail-smtp-user   . "jwintz@gmail.com")))
+  (set-email-account! :email "Gmail"
+    '((mu4e-sent-folder       . "/Gmail/Sent")
+      (mu4e-drafts-folder     . "/Gmail/Drafts")
+      (mu4e-trash-folder      . "/Gmail/Trash")
+      (user-full-name         . "Julien Wintz")
+      (user-mail-address      . "jwintz@gmail.com")
+      (smtpmail-smtp-user     . "jwintz@gmail.com")))
 
-    (add-hook 'mu4e-main-mode-hook '+private/m4ue-reduce-header)
-    (add-hook 'mu4e-index-updated-hook '+private/force-mail-index)
-    (add-hook 'message-send-hook 'mml-secure-message-sign-pgpmime))
+  (add-hook 'mu4e-main-mode-hook '+private/m4ue-reduce-header)
+  (add-hook 'mu4e-index-updated-hook '+private/force-mail-index)
+  (add-hook 'message-send-hook 'mml-secure-message-sign-pgpmime))
 
 (def-package! mu4e-maildirs-extension
   :after mu4e
