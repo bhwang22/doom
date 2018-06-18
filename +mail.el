@@ -55,7 +55,7 @@
       (user-mail-address      . "julien.wintz@inria.fr")
       (smtpmail-smtp-user     . "jwintz")) t)
 
-  (set-email-account! :email "iCloud"
+  (set-email-account! "iCloud"
     '((mu4e-sent-folder       . "/iCloud/Sent Messages")
       (mu4e-drafts-folder     . "/iCloud/Drafts")
       (mu4e-trash-folder      . "/iCloud/Trash")
@@ -63,7 +63,7 @@
       (user-mail-address      . "julien.wintz@me.com")
       (smtpmail-smtp-user     . "julien.wintz")))
 
-  (set-email-account! :email "Gmail"
+  (set-email-account! "Gmail"
     '((mu4e-sent-folder       . "/Gmail/Sent")
       (mu4e-drafts-folder     . "/Gmail/Drafts")
       (mu4e-trash-folder      . "/Gmail/Trash")
