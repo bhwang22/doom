@@ -42,6 +42,9 @@
 (def-package! resize-window
   :commands  (resize-window))
 
+(def-package! page-break-lines
+  :config (turn-on-page-break-lines-mode))
+
 (provide '+ui)
 
 ;;; +ui.el ends here

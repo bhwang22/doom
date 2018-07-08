@@ -9,6 +9,7 @@
 (package! magit-gitflow)
 (package! org2jekyll)
 (package! org-caldav)
+(package! page-break-lines)
 (package! resize-window)
 (package! rtags :disable t)
 (package! xterm-color)

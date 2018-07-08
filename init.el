@@ -9,8 +9,7 @@
        services          ; TODO managing external services & code builders
        snippets          ; my elves. They type so I don't have to
        spellcheck        ; tasing you for misspelling mispelling
-       syntax-checker    ; tasing you for every semicolon you forget
-       version-control   ; remember, remember that commit in November
+       ;syntax-checker    ; tasing you for every semicolon you forget
        workspaces        ; tab emulation, persistence & separate workspaces
 
        :completion
@@ -22,7 +21,8 @@
        :ui
        doom              ; what makes DOOM look the way it does
        doom-dashboard    ; a nifty splash screen for Emacs
-       doom-modeline     ; a snazzy Atom-inspired mode-line
+       (doom-modeline    ; a snazzy Atom-inspired mode-line
+        +new)            ; upcoming mode-line
        doom-quit         ; DOOM quit-message prompts when you quit Emacs
        hl-todo           ; highlight TODO/FIXME/NOTE tags
        nav-flash         ; blink the current line after jumping
@@ -30,7 +30,11 @@
        (popup            ; tame sudden yet inevitable temporary windows
         +all             ; catch all popups that start with an asterix
         +defaults)       ; default popup rules
+       vc-gutter         ; vcs diff in the fringe
        window-select     ; visually switch windows
+
+       :editor
+       rotate-text       ; cycle region at point between text candidates
 
        :emacs
        dired             ; making dired pretty [functional]
@@ -38,13 +42,13 @@
        electric          ; smarter, keyword-based electric-indent
        eshell            ; a consistent, cross-platform shell (WIP)
        imenu             ; an imenu sidebar and searchable code index
+       vc                ; version-control and Emacs, sitting in a tree
 
        :tools
        make              ; run make tasks from Emacs
        magit             ;
        pdf               ; pdf enhancements
        rgb               ; creating color strings
-       rotate-text       ; cycle region at point between text candidates
        term              ; terminals in Emacs
        upload            ; map local to remote projects via ssh/ftp
 

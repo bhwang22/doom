@@ -9,6 +9,7 @@
 (load! "+editor")
 (load! "+eshell")
 (load! "+header")
+(load! "+hydras")
 (load! "+lang|c")
 (load! "+lang|cc")
 (load! "+lang|org")

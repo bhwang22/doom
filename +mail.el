@@ -7,16 +7,12 @@
     (kill-line)
     (kill-line)))
 
-(def-modeline! mu4e
-  (bar matches " %b " selection-info)
-  ())
+(def-modeline! 'mu4e
+  '(+mode-line-bar +mode-line-matches " %b " "  %2l:%c %p  " ))
 
-(add-hook! mu4e-main-mode
-  (setq header-line-format (or (doom-modeline 'mu4e) mode-line-format)
-        mode-line-format nil))
-
-(add-hook! mu4e-headers-mode
-  (setq header-line-format (or (doom-modeline 'mu4e) mode-line-format)
+(add-hook! (mu4e-main-mode mu4e-headers-mode)
+  (set-modeline! 'mu4e)
+  (setq header-line-format mode-line-format
         mode-line-format nil))
 
 (after! mu4e

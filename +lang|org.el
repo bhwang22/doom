@@ -4,10 +4,6 @@
   :config
   (setq url-gateway-method 'tls))
 
-;; (after! org
-;;   (doom-themes-set-faces 'doom-nord
-;;     (org-property-value :foreground (doom-color 'teal))))
-
 (def-package! org-caldav
   :config
   (setq plstore-cache-passphrase-for-symmetric-encryption t)
@@ -117,6 +113,13 @@
   (setq org-capture-templates
         '(("t" "Inbox" entry (file+headline "~/Org/inbox.org" "Inbox")
            "* TODO %?\n  %i\n  %a"))))
+
+(defun org-agenda-cts ()
+  (and (eq major-mode 'org-agenda-mode)
+       (let ((args (get-text-property
+                    (min (1- (point-max)) (point))
+                    'org-last-args)))
+         (nth 2 args))))
 
 (provide '+org)
 

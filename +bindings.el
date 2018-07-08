@@ -82,6 +82,8 @@
  "C-c w ." '+workspace/switch-to
  "C-c w k" '+workspace/kill-session
 
+ "C-c h h" 'hydra-help/body
+
  "<f10>" 'neotree-dir
  "<f12>" 'toggle-frame-fullscreen
 
