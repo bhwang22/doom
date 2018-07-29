@@ -1,4 +1,6 @@
-;;; +lang|cc.el --- description -*- lexical-binding: t; -*-
+;;; +lang|python.el --- description -*- lexical-binding: t; -*-
+
+;;; Requirements: $ conda install jedi sexpdata epc
 
 (after! conda
   (setq conda-anaconda-home "~/.conda")
@@ -7,4 +9,4 @@
 
 (provide '+lang|python)
 
-;;; +lang|cc.el ends here
+;;; +lang|python.el ends here
