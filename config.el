@@ -13,6 +13,7 @@
 (load! "+lang|c")
 (load! "+lang|cc")
 (load! "+lang|org")
+(load! "+lang|python")
 (load! "+mail")
 (load! "+twitter")
 (load! "+ui")

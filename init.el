@@ -6,10 +6,9 @@
        (lookup           ; helps you navigate your code and documentation
         +devdocs         ; ...on devdocs.io online
         +docsets)        ; ...or in Dash docsets locally                         ;
-       services          ; TODO managing external services & code builders
        snippets          ; my elves. They type so I don't have to
        spellcheck        ; tasing you for misspelling mispelling
-       ;syntax-checker    ; tasing you for every semicolon you forget
+       syntax-checker    ; tasing you for every semicolon you forget
        workspaces        ; tab emulation, persistence & separate workspaces
 
        :completion
@@ -48,6 +47,7 @@
        make              ; run make tasks from Emacs
        magit             ;
        pdf               ; pdf enhancements
+       prodigy           ; FIXME managing external services & code builders
        rgb               ; creating color strings
        term              ; terminals in Emacs
        upload            ; map local to remote projects via ssh/ftp
@@ -80,7 +80,7 @@
         +present         ; Emacs for presentations
         +publish)        ; Emacs+Org as a static site generator
        perl              ; write code no one else can comprehend
-       python            ; beautiful is better than ugly
+      (python +conda)    ; beautiful is better than ugly
        rest              ; Emacs as a REST client
        ruby              ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
       ;rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()

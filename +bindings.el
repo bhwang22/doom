@@ -41,11 +41,13 @@
 
  "C-c l c" '+private/clear-eshell
  "C-c l l" '+eshell/open-popup
- "C-c l n" '+eshell/next
+ "C-c l n" '+eshell/switch-to-next
  "C-c l o" '+eshell/open
- "C-c l p" '+eshell/previous
- "C-c l s" '+eshell/switch
+ "C-c l p" '+eshell/switch-to-previous
+ "C-c l s" '+eshell/switch-to
  "C-c l r" '+private/eshell-history
+ "C-c l 2" '+eshell/split-below
+ "C-c l 3" '+eshell/split-right
 
  "C-c m s" 'mail-add-attachment
  "C-c m m" 'mu4e
@@ -82,7 +84,7 @@
  "C-c w ." '+workspace/switch-to
  "C-c w k" '+workspace/kill-session
 
- "C-c h h" 'hydra-help/body
+ "C-c h h" '+private/hydra-help/body
 
  "<f10>" 'neotree-dir
  "<f12>" 'toggle-frame-fullscreen

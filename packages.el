@@ -1,6 +1,8 @@
 ;;; packages.el --- description -*- no-byte-compile: t; -*-
 
 (package! anzu)
+(package! anaconda-mode :disable t)
+(package! company-jedi)
 (package! flycheck-popup-tip :disable t)
 (package! flycheck-posframe :disable t)
 (package! iedit)

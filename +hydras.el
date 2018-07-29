@@ -1,19 +1,14 @@
 ;;; +hydras.el --- description -*- lexical-binding: t; -*-
 
-(defhydra hydra-help (:exit t)
+(defhydra +private/hydra-help (:exit t)
   "
   Describe        ^^Keys                    ^^Search
-  ---------------------------------------------------------------
+ ╭───────────────────────────────────────────────────────────────╯
   _f_unction        _k_eybinding              _a_propros
   _p_ackage         _w_here-is                _d_oc strings
   _m_ode            _b_: show all bindings    _s_: info by symbol
   _v_ariable
   "
-  ("e" (vector )iew-echo-area-messages "messages")
-  ("l" view-lossage "lossage")
-  ("C" describe-coding-system "coding-system")
-  ("I" describe-input-method "input-method")
-
   ("b" describe-bindings nil)
   ("c" describe-key-briefly nil)
   ("k" describe-key nil)
@@ -27,8 +22,6 @@
   ("p" describe-package nil)
   ("m" describe-mode nil)
   ("v" describe-variable nil)
-  ("y" describe-syntax nil)
-
-  ("q" help-quit "quit"))
+  ("y" describe-syntax nil))
 
 ;;; +hydras.el ends here

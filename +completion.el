@@ -10,7 +10,8 @@
   (eval-after-load 'company '(add-to-list 'company-backends 'company-elisp))
   (eval-after-load 'company '(add-to-list 'company-backends 'company-irony))
   (eval-after-load 'company '(add-to-list 'company-backends 'company-irony-c-headers))
-  (eval-after-load 'company '(add-to-list 'company-backends 'company-cmake)))
+  (eval-after-load 'company '(add-to-list 'company-backends 'company-cmake))
+  (eval-after-load 'company '(add-to-list 'company-backends 'company-jedi)))
 
 (provide '+completion)
 
