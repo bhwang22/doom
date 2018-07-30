@@ -1,4 +1,3 @@
-
 ;;; +bindings.el --- description -*- lexical-binding: t; -*-
 
 (global-set-key (kbd "C-c o") nil)
@@ -7,6 +6,8 @@
 
  "C-+" 'text-scale-increase
  "C--" 'text-scale-decrease
+
+ "M-v" 'scroll-down-command
 
  "A-C-a" 'sp-beginning-of-sexp
  "A-C-e" 'sp-end-of-sexp
