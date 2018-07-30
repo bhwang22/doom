@@ -7,8 +7,9 @@
 
 (def-package! iedit)
 
-(add-hook   'find-file-hook #'whitespace-mode)
-(add-hook 'before-save-hook #'whitespace-cleanup)
+(when (display-graphic-p)
+  (add-hook   'find-file-hook #'whitespace-mode)
+  (add-hook 'before-save-hook #'whitespace-cleanup))
 
 (provide '+editor)
 

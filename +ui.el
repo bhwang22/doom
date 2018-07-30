@@ -16,9 +16,6 @@
 
 (setq doom-theme 'doom-opera)
 
-(unless (display-graphic-p)
-  (setq doom-theme nil))
-
 (after! posframe
   (add-variable-watcher
    'posframe--frame
