@@ -7,8 +7,8 @@
     (kill-line)
     (kill-line)))
 
-(def-modeline! 'mu4e
-  '(bar matches " %b " "  %2l:%c %p  " ))
+(def-modeline-format! 'mu4e
+  '(+modeline-matches " %b  %2l:%c %p  "))
 
 (add-hook! (mu4e-main-mode mu4e-headers-mode)
   (set-modeline! 'mu4e)
