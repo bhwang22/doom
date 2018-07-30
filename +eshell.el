@@ -35,7 +35,7 @@
             (propertize (if (equal pwd "~")
                             pwd
                           (abbreviate-file-name (shrink-path-file pwd)))
-                        'face 'all-the-icons-lcyan))
+                        'face 'all-the-icons-lblue))
           (propertize (+private/eshell--current-git-branch)
                       'face 'all-the-icons-green)
           (propertize (+private/eshell--current-conda-environment)
@@ -45,6 +45,21 @@
 
 (after! eshell
   (setq eshell-prompt-function '+private/eshell-default-prompt))
+
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; eshell completion
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(def-package! bash-completion
+  :init
+  (defun eshell-bash-completion ()
+    (while (pcomplete-here
+            (nth 2 (bash-completion-dynamic-complete-nocomint (save-excursion (eshell-bol) (point)) (point))))))
+
+  (setq bash-completion-nospace t)
+  (setq eshell-default-completion-function 'eshell-bash-completion))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (provide '+eshell)
 

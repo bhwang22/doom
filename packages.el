@@ -2,6 +2,7 @@
 
 (package! anzu)
 (package! anaconda-mode :disable t)
+(package! bash-completion :recipe (:fetcher github :repo "szermatt/emacs-bash-completion" :files ("bash-completion.el")))
 (package! company-jedi)
 (package! flycheck-popup-tip :disable t)
 (package! flycheck-posframe :disable t)
