@@ -3,9 +3,7 @@
 ;;; Requirements: $ conda install jedi sexpdata epc
 
 (after! conda
-  (setq conda-anaconda-home "~/.conda")
-  (eval-after-load "jedi"
-    '(setq jedi:server-command (list "~/.conda/envs/gnomon/bin/python" jedi:server-script))))
+  (setq conda-anaconda-home "~/.conda"))
 
 (provide '+lang|python)
 

@@ -84,7 +84,8 @@
  "C-c w ." '+workspace/switch-to
  "C-c w k" '+workspace/kill-session
 
- "C-c h h" '+private/hydra-help/body
+ "C-c h h"   '+private/hydra-help/body
+ "C-c h d p" '+private/hydra-doom-popup/body
 
  "<f10>" 'neotree-dir
  "<f12>" 'toggle-frame-fullscreen

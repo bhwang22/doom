@@ -24,4 +24,23 @@
   ("v" describe-variable nil)
   ("y" describe-syntax nil))
 
+(defhydra +private/hydra-doom-popup (:exit t)
+  "
+  Key          ^^Function
+ ╭───────────────────────────────╯
+  _o_ther        +popup/other
+  _t_oggle       +popup/toggle
+  _c_lose        +popup/close
+  _C_lose all    +popup/close-all
+  _r_aise        +popup/raise
+  _R_estore      +popup/restore
+  "
+  ("o" +popup/other nil)
+  ("t" +popup/toggle nil)
+  ("c" +popup/close nil)
+  ("C" +popup/close-all nil)
+  ("r" +popup/raise nil)
+  ("R" +popup/restore nil))
+
+
 ;;; +hydras.el ends here
