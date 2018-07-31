@@ -12,9 +12,4 @@
 
 (add-to-list 'auto-mode-alist '("/[Mm]akefile\\'" . makefile-mode))
 
-(def-package! command-log-mode
-  :commands
-  (clm/global-command-log-mode
-   clm/open-command-log-buffer))
-
 ;;; +behavior.el ends here
