@@ -8,6 +8,7 @@
  "C--" 'text-scale-decrease
 
  "M-v" 'scroll-down-command
+ "C-v" 'scroll-up-command
 
  "A-C-a" 'sp-beginning-of-sexp
  "A-C-e" 'sp-end-of-sexp
@@ -55,7 +56,6 @@
  "C-c m i" '+private/force-mail-index
  "C-c m s" 'message-send
 
- "C-c o s"     'org-caldav-sync
  "C-c o a a"   'org-agenda
  "C-c o a t"   'org-todo-list
  "C-c o a m"   'org-tags-view
