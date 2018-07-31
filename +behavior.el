@@ -1,6 +1,7 @@
 ;;; +behavior.el --- description -*- lexical-binding: t; -*-
 
 (setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'super)
 
 (map! :map (minibuffer-local-map
             minibuffer-local-ns-map

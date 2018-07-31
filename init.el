@@ -79,7 +79,9 @@
         +present         ; Emacs for presentations
         +publish)        ; Emacs+Org as a static site generator
        perl              ; write code no one else can comprehend
-      (python +conda)    ; beautiful is better than ugly
+      (python            ; beautiful is better than ugly
+        +conda
+        +ipython)
        rest              ; Emacs as a REST client
        ruby              ; 1.step do {|i| p "Ruby is #{i.even? ? 'love' : 'life'}"}
       ;rust              ; Fe2O3.unwrap().unwrap().unwrap().unwrap()

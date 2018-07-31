@@ -67,7 +67,8 @@
  "C-c o e l P" 'org-beamer-export-to-pdf
  "C-c o l"     'org-store-link
 
- "C-c p p" 'projectile-switch-open-project
+ "C-c p f" 'projectile-find-file
+ "C-c p p" 'projectile-switch-project
 
  "C-c t t" '=twitter
 

@@ -15,6 +15,7 @@
 (load! "+lang|org")
 (load! "+lang|python")
 (load! "+mail")
+(load! "+projectile")
 (load! "+twitter")
 (load! "+ui")
 (load! "+vc")
