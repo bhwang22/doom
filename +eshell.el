@@ -59,6 +59,17 @@
   (setq bash-completion-nospace t)
   (setq eshell-default-completion-function 'eshell-bash-completion))
 
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; eshell visual commands
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(eval-after-load 'esh-opt
+  '(progn
+     (require 'em-term)
+     (require 'em-alias)
+     (add-to-list 'eshell-visual-commands "htop")
+     (add-to-list 'eshell-visual-commands "ccmake")))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (provide '+eshell)
