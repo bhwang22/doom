@@ -1,11 +1,8 @@
 ;;; +lang|python.el --- description -*- lexical-binding: t; -*-
 
 (after! conda
-  (setq conda-anaconda-home "~/.conda"))
-
-(def-package! company-jedi
-  :config
-  (set-company-backend! 'python-mode 'company-jedi))
+  (setq conda-anaconda-home "~/.conda")
+  (advice-remove 'anaconda-mode-bootstrap #'+python*anaconda-mode-bootstrap-in-remote-environments))
 
 (provide '+lang|python)
 
