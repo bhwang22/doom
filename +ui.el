@@ -15,10 +15,10 @@
 ;; Font setup
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq doom-font (font-spec :family "Source Code Variable" :size 16))
+(setq doom-font (font-spec :family "Source Code Variable" :size 11))
 (setq doom-variable-pitch-font (font-spec :family "Source Code Variable"))
 (setq doom-unicode-font (font-spec :family "Source Code Variable"))
-(setq doom-big-font (font-spec :family "Source Code Variable" :size 19))
+(setq doom-big-font (font-spec :family "Source Code Variable" :size 16))
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Theme setup

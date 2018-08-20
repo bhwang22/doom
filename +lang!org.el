@@ -37,6 +37,6 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(provide '+org)
+(provide '+lang!org)
 
-;;; +org.el ends here
+;;; +lang!org.el ends here

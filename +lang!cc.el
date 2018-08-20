@@ -1,4 +1,4 @@
-;;; +lang|cc.el --- description -*- lexical-binding: t; -*-
+;;; +lang!cc.el --- description -*- lexical-binding: t; -*-
 
 (after! cc-mode
   (setq-default c-basic-offset 4)
@@ -19,6 +19,6 @@
         ("\\.hpp\\'" (".tpp" ".cpp" ".cxx" ".tcc" ".cc" ".C" ".c" ".h"))
         ("\\.hxx\\'" (".tpp" ".cpp" ".cxx" ".tcc" ".cc" ".C" ".c" ".h"))))
 
-(provide '+lang|cc)
+(provide '+lang!cc)
 
-;;; +lang|cc.el ends here
+;;; +lang!cc.el ends here
