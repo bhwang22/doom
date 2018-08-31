@@ -11,6 +11,7 @@
 (package! page-break-lines)
 (package! resize-window)
 (package! rtags :disable t)
+(package! qml-mode)
 (package! xterm-color)
 
 (provide 'packages)

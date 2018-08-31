@@ -48,7 +48,6 @@
        pdf               ; pdf enhancements
        prodigy           ; FIXME managing external services & code builders
        rgb               ; creating color strings
-       term              ; terminals in Emacs
        upload            ; map local to remote projects via ssh/ftp
 
        :lang
