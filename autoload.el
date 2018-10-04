@@ -32,9 +32,4 @@
     (setf (buffer-substring start-pos end-pos) command)
     (end-of-line)))
 
-;;;###autoload
-(defun +private/force-mail-index ()
-  (interactive)
-  (mu4e-maildirs-extension-force-update '(16)))
-
 ;;; autoload.el ends here

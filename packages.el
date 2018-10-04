@@ -1,6 +1,5 @@
 ;;; packages.el --- description -*- no-byte-compile: t; -*-
 
-(package! anzu)
 (package! bash-completion :recipe (:fetcher github :repo "szermatt/emacs-bash-completion" :files ("bash-completion.el")))
 (package! flycheck-popup-tip :disable t)
 (package! flycheck-posframe :disable t)
