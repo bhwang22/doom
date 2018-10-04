@@ -1,7 +1,5 @@
 ;;; +projectile.el --- description -*- lexical-binding: t; -*-
 
-(setq counsel-projectile-switch-project-action #'counsel-projectile-switch-project-action)
-
-(remove-hook 'projectile-after-switch-project-hook #'+workspaces|switch-to-project)
+(setq +workspaces-on-switch-project-behavior nil)
 
 ;;; +projectile.el ends here

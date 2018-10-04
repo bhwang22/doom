@@ -12,7 +12,6 @@
 (load! "+lang!python")
 (load! "+projectile")
 (load! "+ui")
-(load! "+vc")
 (load! "+workspaces")
 
 (provide 'config)
