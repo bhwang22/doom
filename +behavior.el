@@ -13,6 +13,4 @@
 
 (add-to-list 'auto-mode-alist '("/[Mm]akefile\\'" . makefile-mode))
 
-(def-package! qml-mode)
-
 ;;; +behavior.el ends here

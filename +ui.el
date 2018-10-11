@@ -51,6 +51,12 @@
 (def-package! page-break-lines
   :config (turn-on-page-break-lines-mode))
 
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Popups
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; (set-popup-rule! "^\\*doom eshell" :size 0.3 :slot 1 :vslot -2 :select t :quit nil :ttl 0)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (provide '+ui)

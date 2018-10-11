@@ -9,6 +9,7 @@
 (load! "+header")
 (load! "+lang!c")
 (load! "+lang!cc")
+(load! "+lang!cpp")
 (load! "+lang!python")
 (load! "+projectile")
 (load! "+ui")
