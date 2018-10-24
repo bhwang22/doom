@@ -1,20 +1,33 @@
 ;;; +lang!cpp.el -*- lexical-binding: t; -*-
 
-(set-pretty-symbols! `c++-mode
-  ;; Functional
-  :def "void "
-  ;; Types
+(plist-put +pretty-code-symbols   :list "()")
+(plist-put +pretty-code-symbols :vector "()")
+(plist-put +pretty-code-symbols    :map "<>")
+(plist-put +pretty-code-symbols   :hash "{}")
+
+(set-pretty-symbols! 'c++-mode
+  ;;Types
   :null "nullptr"
-  :true "true" :false "false"
-  :int "int" :float "float"
-  :str "std::string" "QString"
+;;:null "NULL"
+  :true "true"
+  :false "false"
+  :int "int"
+  :float "float"
+  :str "QString"
   :bool "bool"
+  :list "QList"
+  :map  "QMap"
+  :hash "QHash"
+  :vector "QVector"
   ;; Flow
   :not "!"
-  :and "&&" :or "||"
+  :and "&&"
+  :or "||"
   :for "for"
-  :return "return")
+  :for "foreach"
+  :return "return"
+  :merge t)
 
 (provide '+lang!cpp)
 
-;;; +lang!c.el ends here
+;;; +lang!cpp.el ends here
